@@ -82,7 +82,7 @@ body {
 /********** Large devices only **********/
 @media (min-width: 1200px) {
     .container .jumbotron {
-      background: url('images/jumbotron_1200.jpg') no-repeat;
+      background: url('./images/jumbotron_1200.jpg') no-repeat;
       height: 675px;
     }
   }
@@ -100,7 +100,7 @@ body {
   
     /* Home Page */
     .container .jumbotron {
-      background: url('images/jumbotron_992.jpg') no-repeat;
+      background: url('./images/jumbotron_992.jpg') no-repeat;
       height: 558px;
     }
     /* End Home Page */
@@ -110,12 +110,42 @@ body {
   @media (min-width: 768px) and (max-width: 991px) {
     /* Home Page */
     .container .jumbotron {
-      background: url('images/jumbotron_768.jpg') no-repeat;
+      background: url('./images/jumbotron_768.jpg') no-repeat;
       height: 432px;
     }
     /* End Home Page */
   
   }
+  #menu-tile,#specials-tile,#map-tile {
+    height: 250px;
+    width: 100%;
+    margin-bottom: 15PX ;
+    position: relative;
+    border: 2px solid #520707;
+    overflow: hidden;
+  }
+  #menu-tile:hover,#specials-tile:hover,#map-tile:hover{
+    box-shadow: 0 1px 5px 1px#cccccc;
+  }
+  #menu-tile span,#specials-tile span,#map-tile span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    opacity:       .8;
+    background-color: #222;
+}
+#menu-tile {
+    background: url('./images/menu-tile.jpg') no-repeat;
+    background-position: center;
+  }
+  #specials-tile {
+    background: url('./images/specials-tile.jpg') no-repeat;
+    background-position: center;
+  }
+  
   
   /********** Extra small devices only **********/
   @media (max-width: 767px) {
@@ -149,35 +179,13 @@ body {
     margin-top: 30px;
     padding: 0;
   }
+  #menu-tile,#specials-tile,#map-tile{
 
-  }  
-  #menu-tile,#specials-tile,#map-tile {
-    height: 250px;
-    width: 100%;
-    margin-bottom: 15PX ;
-    position: relative;
-    border: 2px solid #520707;
-    overflow: hidden;
-  }
-  #menu-tile:hover,#specials-tile:hover,#map-tile:hover{
-    box-shadow: 0 1px 5px 1px#cccccc;
-  }
-  #menu-tile span,#specials-tile span,#map-tile span{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    text-align: center;
-    color: white;
-    opacity:       .8;
-    background-color: #222;
-}
-#menu-tile {
-    background: url('../images/menu-tile.jpg') no-repeat;
-    background-position: center;
-  }
-  #specials-tile {
-    background: url('../images/specials-tile.jpg') no-repeat;
-    background-position: center;
-  }
   
+  margin: auto;
+  width: 360px;
+}
+ 
+  }
+
+   
